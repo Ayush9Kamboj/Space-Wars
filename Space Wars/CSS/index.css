@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#progress{
+    height: .5vh;
+    width: 0vw;
+    background-color: red;
+    position: absolute;
+    z-index: 1000;
+    animation: progress 2s 1 ease-in-out;
+}
+
+@keyframes progress {
+    0%{
+        width: 0vw;
+    }
+    40%{
+        width: 80vw;
+    }
+    100%{
+        width: 100vw;
+    }
+}
+
+#container{
+    width: 81vw;
+    height: 40vw;
+    background-color: black;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    background-image: url(/Images/background.jpg);
+    background-size: cover;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4vw;
+    position: absolute;
+    visibility: hidden;
+    color: white;
+}
+
+#startMessage{
+    margin: 3vw 4.4vw;
+}
+
+#obstacelsAlert{
+    margin: 3vw 2vw;
+}
+
+#message1{
+    margin: 3vw 32vw;
+}
+
+#message2, #message4, #message6{
+    margin: 3vw 2vw;
+}
+
+#message3, #message5{
+    margin: 3vw 32vw;
+}
+
+#message7{
+    margin: 3vw;
+}
+
+#message8{
+    font-size: 2vw;
+    margin: 37vw 29vw;
+    z-index: 999;
+}
+
+#endingMessage{
+    font-size: 13vw;
+    margin: 2vw 23vw;
+    z-index: 999;
+}
+
+#endingMessage1{
+    font-size: 2vw;
+    margin: 31vw 33vw;
+    z-index: 999;
+}
+
+#endingMessage1:hover{
+    transform-origin: center;
+    transform: scale(1.5);
+    transition: transform .5s ease-in-out;
+}
+
+#endingMessage2{
+    font-size: 2vw;
+    margin: 34vw 35vw;
+    z-index: 999;
+}
+
+#endingMessage2:hover{
+    transform-origin: center;
+    transform: scale(1.5);
+    transition: transform .5s ease-in-out;
+}
+
+#character{
+    width: 5vw;
+    height: 5vw;
+    position: relative;
+    left: 36vw;
+    top: 16vw;
+    background-image: url(/Images/ufo.png);
+    background-size: contain;
+    animation: ufo 1s infinite ease-in-out;
+}
+
+@keyframes ufo {
+    0%{
+        transform: scaleY(1);
+    }
+    25%{
+        transform: scaleY(1.1);
+        transition: transform .25s;
+    }
+    50%{
+        transform: scaleY(1);
+        transition: transform .25s;
+    }
+    75%{
+        transform: scaleY(.9);
+        transition: transform .25s;
+    }
+    100%{
+        transform: scaleY(1);
+        transition: transform .25s;
+    }
+}
+
+.obstacels{
+    /* background-color: black; */
+    /* display: block; */
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 82vw;
+    top: 15.4vw;
+    background-image: url(/Images/meteriod.png);
+    background-size: cover;
+    animation: obstacels 10s infinite linear;
+}
+
+@keyframes obstacels {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#controler{
+    width: 20vw;
+    display: flex;
+    justify-content:space-around;
+    margin: 5vh auto;
+    /* background-color: red; */
+}
+
+.btn{
+    width: 5vw;
+    height: 2vw;
+    margin: 0;
+    position: relative;
+    font-size: 1.2vw;
+}
+
+#left{
+    top: 2vw;
+}
+
+#right{
+    top: 2vw;
+}
+
+#down{
+    top: 4vw;
+    left: -10vw;
+}
+
+#time{
+    position: relative;
+    top: 29vw;
+    left: 75vw;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(47, 47, 47);
+    padding: 1vw;
+    color: rgb(198, 198, 198);
+}

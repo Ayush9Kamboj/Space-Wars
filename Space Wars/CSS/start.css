@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#progress{
+    height: .5vh;
+    width: 0vw;
+    background-color: red;
+    position: absolute;
+    z-index: 1000;
+    animation: progress 2s 1 ease-in-out;
+}
+
+@keyframes progress {
+    0%{
+        width: 0vw;
+    }
+    40%{
+        width: 80vw;
+    }
+    100%{
+        width: 100vw;
+    }
+}
+
+#container{
+    width: 81vw;
+    height: 40vw;
+    background-color: black;
+    position: relative;
+    margin: auto;
+    background-image: url(/Images/background.jpg);
+    background-size: cover;
+}
+
+h1{
+    font-size: 8vw;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    color: white;
+}
+
+a{
+    font-size: 4vw;
+    color: white;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p{
+    color: white;
+    margin: 3vw;
+    font-size: 1.5vw;
+}
+
+li{
+    margin: 5vw;
+}
+
+li:hover{
+    transform-origin: left;
+    transform: scale(1.5);
+    transition: transform .5s ease-in-out;
+}
+
+#endingMessage2{
+    margin: 0vw 36vw;
+    font-size: 2vw;
+}
+
+#endingMessage2:hover{
+    transform-origin: center;
+    transform: scale(1.5);
+    transition: transform .5s ease-in-out;
+}

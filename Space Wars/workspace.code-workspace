@@ -1,0 +1,13 @@
+{
+    "folders": [
+        {
+            "path": "."
+        },
+        {
+            "path": "..\\Food Deleviry System"
+        }
+    ],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "Space Wars"
+    }
+}
